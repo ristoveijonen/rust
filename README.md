@@ -6,6 +6,6 @@
 
 Except for files in /programming_concepts which have not been built with cargo can be run without it.
 
-`$ ./programming_concepts/data_types`
+`$ ./programming_concepts/{file_name}`
 
-Altough the files are heavily commented so I would recommend reading them through.
+The files are heavily commented so I would recommend reading them through.
