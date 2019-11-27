@@ -1,6 +1,6 @@
 # Getting to know rust
 #### MATERIALS
-<a src="https://doc.rust-lang.org/book/title-page.html">Official rust online book</a>
+[Official rust online book](https://doc.rust-lang.org/book/title-page.html)
 #### RUN WITH CARGO
 `$ cargo run`
 
