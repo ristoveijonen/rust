@@ -13,11 +13,16 @@ pub fn main() {
   let s = String::from("hello world!");
   let w = first_word_slice(&s);
   println!("first word of '{}' is {}", s, w);
+
+  // slices can be used with other types too
+  let a = [1, 2, 3, 4, 5];
+  let s = &a[1..4];
+  println!("s ({:?}) is a slice of a ({:?})", s, a);
 }
 
 // return the index of the end of the first word in a string
 // this is not quite efficient, also if we wanted to make a function that returns a word from middle of a string it would need to return a tuple and various other problematiques.
-pub fn first_word(s: &String) -> usize {
+fn first_word(s: &String) -> usize {
   let bytes = s.as_bytes(); // turn string into bytes
 
   for (i, &item) in bytes.iter().enumerate() { // loop through each char in string as byte
