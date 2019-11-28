@@ -1,9 +1,5 @@
-fn main() {
-  scope();
-}
-
 // In rust an item is only valid inside the scope it's declared in.
-fn scope() { // scopre of scope().
+pub fn scope() { // scopre of scope().
   // s goes to the stack here, because it's size is known at compile time.
   let s = "hello"; // s is in scope as long as it stays inside of scope().
   println!("{} from stack", s);
