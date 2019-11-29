@@ -1,3 +1,5 @@
+mod defining_and_instatiating_structs;
+
 fn main() {
-    println!("Hello, world!");
+  defining_and_instatiating_structs::main();
 }
