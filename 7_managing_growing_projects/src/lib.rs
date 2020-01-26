@@ -115,8 +115,8 @@ pub fn eat_at_restaurant_2() {
   // The below would not work if Results were brought to scope like
   // use std::fmt::Result;
   // use std::io::Result;
-  fn function1() -> fmt::Result {}
-  fn function2() -> io::Result<()> {}
+  // fn function1() -> fmt::Result {}
+  // fn function2() -> io::Result<()> {}
   // The above problem could be averted also by renaming other one of the Results
   // use std::fmt::Result;
   // use std::io::Result as IoResult;
