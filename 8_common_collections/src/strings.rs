@@ -31,14 +31,14 @@ pub fn strings() {
   let s2= String::from("tac");
   let s3 = String::from("toe");
   let s = s1 + "-" + &s2 + "-" + &s3;
-  println!(s);
+  println!("{}", s);
 
   // format! can also be used. it is much more readable and doesn't take ownership of the variables
   let s1 = String::from("tic");
   let s2 = String::from("tac");
   let s3 = String::from("toe");
   let s = format!("{}-{}-{}", s1, s2, s3);
-  println!(s);
+  println!("{}", s);
 
   // Unlinke many other programming languages, rust does not support accessing string characters by integer index.
   // For exmaple in JS one would expect s[0] === t, in rust one would get an error trying that
