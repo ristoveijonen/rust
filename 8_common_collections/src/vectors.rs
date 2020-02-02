@@ -63,7 +63,7 @@ pub fn vectors() {
     SpreadsheetCell::Text(String::from("blue")),
     SpreadsheetCell::Float(10.12),
   ];
-  for cell in &row {
+  for _cell in &row {
     println!("{:?}", &row);
   }
 } // --> v is out of scope

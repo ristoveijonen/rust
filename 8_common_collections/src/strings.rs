@@ -1,11 +1,11 @@
 pub fn strings() {
-  let s = String::new();
+  let _s = String::new();
   let data = "initial data";
 
   // These all do the exact same thing
-  let s = data.to_string();
-  let s = "initial data".to_string();
-  let s = String::from("initial data");
+  let _s = data.to_string();
+  let _s = "initial data".to_string();
+  let _s = String::from("initial data");
 
   // Strings are UTF-8 encodid, so all manner of characters are possible to use.
   let s = String::from("こんにちは");
@@ -19,8 +19,8 @@ pub fn strings() {
   println!("s1 is {}, s2 is {}", s1, s2);
 
   // adding two strings with '+', takes ownership
-  let mut s1 = String::from("foo");
-  let mut s2 = String::from("bar");
+  let s1 = String::from("foo");
+  let s2 = String::from("bar");
   // rust cannot add two String values together (s1 + s2), thus s1 + &s2.
   // add takes ownership of s1 and adds &s2 to it. 
   let s3 = s1 + &s2; // s1 and is no longer after this line, s2 is only a reference so it lives on.
@@ -51,7 +51,7 @@ pub fn strings() {
   // 3. ["न", "म", "स्", "ते"]
   // instead of returning indexes rust opts for the user to be more precise about what is wanted and a user can take a string slice from the original string, which returns a requested amount of characters from the 1. indexing type
   let hello = "Здравствуйте";
-  let s = &hello[0..4];
+  let _s = &hello[0..4];
   // each of the above characters are 2 bytes so the returned value would be 'Зд'
   // requesting incorrect amount of bytes will cause rust to panic, ie. the characters are 2 bytes so if one would try &hello[0..1] it would not work
   
